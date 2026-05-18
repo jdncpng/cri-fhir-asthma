@@ -1,0 +1,10 @@
+[project]
+name = "cri-fhir-asthma"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fhir-resources==7.1.0",
+    "pandas>=3.0.3",
+]
