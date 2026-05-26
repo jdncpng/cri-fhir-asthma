@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Exercise 5 dataset (extract locally from Coding Data 02 - standard.zip)
+data/*.csv
+data/Coding Data 02 - standard.zip
