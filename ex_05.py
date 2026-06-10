@@ -159,9 +159,9 @@ if __name__ == "__main__":
     df_pat["EMERGENCY_ENCOUNTER"] = get_encounter_numbers_per_patient(df_enc, 50849002)  # emergency hospital admission
     df_pat["URGENT_CARE_ENCOUNTER"] = get_encounter_numbers_per_patient(df_enc, 702927004)  # urgent care clinic
     df_pat["ASTHMA_FU_ENCOUNTER"] = get_encounter_numbers_per_patient(df_enc, 394701000)  # asthma follow-up
-    df_pat["HAS_ACTIVE_ALLERGY"] = df_all[df_all["STOP"].isna()].groupby("PATIENT")["CODE"].count().gt(0).astype(int)  # active allergy (no stop date)
-    df_pat["HAS_ACTIVE_MEDICATION"] = df_med[df_med["STOP"].isna()].groupby("PATIENT")["CODE"].count().gt(0).astype(int)  # active medication (no stop date)
-    df_pat["HAS_ACTIVE_CAREPLAN"] = df_cp[df_cp["STOP"].isna()].groupby("PATIENT")["CODE"].count().gt(0).astype(int)  # active careplan (no stop date)
+    df_pat["ACTIVE_ALLERGY_COUNT"] = df_all[df_all["STOP"].isna()].groupby("PATIENT")["CODE"].nunique() # active allergy count (no stop date)
+    df_pat["ACTIVE_MEDICATION_COUNT"] = df_med[df_med["STOP"].isna()].groupby("PATIENT")["CODE"].nunique()  # active medication count (no stop date)
+    df_pat["ACTIVE_CAREPLAN_COUNT"] = df_cp[df_cp["STOP"].isna()].groupby("PATIENT")["CODE"].nunique()  # active careplan count (no stop date)
 
     # 3.1	Export your working data into a csv file.
     export_path = os.path.join("data", "working_data")
