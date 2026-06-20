@@ -1,0 +1,328 @@
+RACE,ETHNICITY,GENDER,BIRTHPLACE,LAT,LON,INCOME,CURRENT_AGE,IS_SEVERE,HIGH_POLLUTION
+white,nonhispanic,M,Quincy  Massachusetts  US,42.095155434839526,-71.90425314963035,10359,10.0,False,False
+white,nonhispanic,F,Boston  Massachusetts  US,42.44032810045709,-72.22986405606348,792644,9.0,True,True
+white,nonhispanic,M,Wareham Center  Massachusetts  US,42.041715905311335,-70.97287877877372,62018,10.0,True,True
+white,nonhispanic,M,Cambridge  Massachusetts  US,42.2174233631454,-71.07339813682448,151475,6.0,False,False
+white,nonhispanic,M,Amherst  Massachusetts  US,42.51932261519663,-71.11517255759851,14071,7.0,False,False
+white,nonhispanic,F,Duxbury  Massachusetts  US,42.32646020237912,-71.43180829123983,11199,8.0,True,True
+white,nonhispanic,F,Agawam  Massachusetts  US,42.51410231691953,-71.01515849593517,62821,9.0,False,True
+white,hispanic,F,Marigot  Saint Andrew Parish  DM,42.08457246255593,-71.65076878616394,44603,8.0,True,True
+white,nonhispanic,M,Dracut  Massachusetts  US,42.31335453654249,-71.62697372471989,101794,10.0,True,True
+white,nonhispanic,F,Boston  Massachusetts  US,42.55804420393442,-71.77769952220832,26454,11.0,True,False
+white,nonhispanic,M,Sheffield  Massachusetts  US,42.32527000756397,-72.39971725634896,73024,12.0,True,False
+white,nonhispanic,F,Maynard  Massachusetts  US,42.326800680193855,-71.06990409899738,23338,8.0,True,True
+white,nonhispanic,M,Pittsfield  Massachusetts  US,42.28366728765011,-71.27146423944504,29,6.0,False,False
+white,nonhispanic,M,Mansfield Center  Massachusetts  US,41.67089311596522,-70.77524525607649,181883,12.0,True,False
+white,nonhispanic,F,Fitchburg  Massachusetts  US,42.199182449960446,-72.6858491678808,23508,9.0,True,True
+white,nonhispanic,F,Salem  Massachusetts  US,42.520700973160096,-71.98383056333863,63797,12.0,False,False
+white,nonhispanic,F,Medway  Massachusetts  US,42.44823075851004,-71.14606767956295,21053,12.0,True,True
+white,nonhispanic,M,Somerville  Massachusetts  US,42.48443230661962,-73.16456434298438,2069,9.0,False,False
+white,nonhispanic,F,Lexington  Massachusetts  US,41.73911786984523,-70.28845775770834,194038,12.0,True,False
+white,nonhispanic,M,Marshfield Hills  Massachusetts  US,42.36038160551594,-70.97602802750382,13497,12.0,False,True
+white,nonhispanic,F,Natick  Massachusetts  US,42.2866743406433,-72.62891986406784,40845,8.0,False,False
+white,nonhispanic,F,Malden  Massachusetts  US,42.22196040431704,-71.73027961235627,1084,12.0,True,True
+white,nonhispanic,F,North Attleborough  Massachusetts  US,42.32049593004767,-71.77341376517107,156817,6.0,False,True
+white,nonhispanic,F,Waltham  Massachusetts  US,42.40276256834803,-71.12573561249332,585780,6.0,False,False
+white,hispanic,M,Kingston  Kingston  JM,42.66831376644105,-71.328924991193,14086,9.0,True,True
+white,hispanic,M,New Bedford  Massachusetts  US,42.70543324469265,-71.64748216730644,649864,12.0,False,False
+white,nonhispanic,M,Holliston  Massachusetts  US,42.111804620214535,-71.61614984647065,165431,6.0,False,True
+white,nonhispanic,F,Worcester  Massachusetts  US,42.18484221574808,-72.44249572507647,927966,7.0,False,False
+white,nonhispanic,M,Franklin  Massachusetts  US,42.30133962014239,-71.22499417928218,775562,9.0,False,True
+white,nonhispanic,M,Malden  Massachusetts  US,42.333830916655145,-71.49833489928484,406519,10.0,False,False
+white,hispanic,F,Charlton  Massachusetts  US,42.12259589268314,-71.17670677448056,34163,6.0,False,True
+white,nonhispanic,F,Worcester  Massachusetts  US,42.21259360864222,-71.13041684483471,30739,8.0,True,True
+white,nonhispanic,F,Warren  Massachusetts  US,42.400159104197,-71.01009086302854,8846,10.0,False,True
+asian,nonhispanic,M,Wilbraham  Massachusetts  US,42.35712587861767,-71.14271129977739,162754,10.0,False,True
+white,nonhispanic,M,Woburn  Massachusetts  US,42.26729007835118,-71.78816252585874,17200,12.0,True,True
+white,nonhispanic,M,North Scituate  Massachusetts  US,42.62849343145682,-71.84435130822344,16828,11.0,True,False
+white,nonhispanic,F,Worcester  Massachusetts  US,42.49796928138045,-71.15721323036409,218203,11.0,True,True
+white,nonhispanic,F,Greenfield  Massachusetts  US,42.70505957265226,-71.43101487841136,30461,8.0,False,False
+white,nonhispanic,F,Arlington  Massachusetts  US,42.15435545849534,-72.49252673514543,16355,6.0,False,True
+white,nonhispanic,F,Pittsfield  Massachusetts  US,42.04606048260544,-71.07238668344799,36768,8.0,False,False
+white,nonhispanic,F,Leominster  Massachusetts  US,42.17343893600711,-71.15254168786109,86940,6.0,False,False
+white,hispanic,M,Santiago  Santiago Province  CL,42.43247288381826,-71.01374443359028,448776,10.0,True,True
+white,nonhispanic,F,Chicopee  Massachusetts  US,42.195559458307,-71.49450361481446,73334,6.0,False,False
+white,hispanic,M,Boston  Massachusetts  US,42.61623463407316,-71.82683973248535,115231,11.0,True,False
+white,nonhispanic,M,Lexington  Massachusetts  US,42.35524439000894,-71.0270867527259,824717,8.0,False,True
+white,nonhispanic,F,Shrewsbury  Massachusetts  US,42.35853240519668,-71.60413393123572,48195,6.0,True,True
+white,hispanic,F,Juarez  Chihuahua  MX,42.42064424463992,-71.13836777791421,33705,8.0,False,True
+white,nonhispanic,F,Southwick  Massachusetts  US,42.34145152232956,-71.50584940149432,66856,12.0,True,True
+black,nonhispanic,F,Barre  Massachusetts  US,42.214927314425935,-70.98966401231799,33234,7.0,True,True
+white,nonhispanic,M,Wrentham  Massachusetts  US,42.77480257367014,-70.83792871214851,83453,10.0,False,False
+white,nonhispanic,F,Spencer  Massachusetts  US,42.37339261753088,-71.06322417498602,5015,8.0,False,True
+white,nonhispanic,F,Littleton  Massachusetts  US,42.45668834993006,-70.97896130411056,51620,8.0,False,True
+white,nonhispanic,F,Peabody  Massachusetts  US,42.14469689944369,-71.51726783297585,125231,6.0,False,False
+white,nonhispanic,F,Boston  Massachusetts  US,42.525566566521896,-70.8001460811694,68404,9.0,True,False
+asian,nonhispanic,M,Cantho  Cần Thơ  VN,41.81699021107912,-71.21470143610235,90689,12.0,False,False
+white,nonhispanic,M,Berkley  Massachusetts  US,42.10741626255193,-71.29409279596007,59809,8.0,True,True
+white,nonhispanic,M,Worcester  Massachusetts  US,42.018583194225016,-70.83922970108863,17525,10.0,False,False
+white,nonhispanic,F,Worcester  Massachusetts  US,41.55004789727371,-70.95577976898622,120344,7.0,False,False
+white,nonhispanic,F,Boston  Massachusetts  US,41.88937758933292,-71.26967574007534,14023,8.0,False,False
+white,nonhispanic,M,Brockton  Massachusetts  US,42.23526813985642,-71.7517329479813,59249,7.0,False,True
+white,nonhispanic,M,Falmouth  Massachusetts  US,42.256487226934986,-71.84063144280078,24468,7.0,True,True
+white,nonhispanic,M,Beverly  Massachusetts  US,42.257525001664575,-71.67358385272661,840034,9.0,True,True
+white,nonhispanic,M,Westfield  Massachusetts  US,41.44708098705237,-70.59123845394535,66750,7.0,True,True
+white,nonhispanic,F,Norton  Massachusetts  US,42.47534425915868,-71.17657280899526,707721,11.0,True,True
+white,nonhispanic,F,Lowell  Massachusetts  US,42.10047895641896,-70.9415544495878,60847,11.0,True,False
+white,nonhispanic,F,Lawrence  Massachusetts  US,42.49979050016306,-70.92816576469276,85965,6.0,False,False
+asian,hispanic,M,Mexico City  Mexico City  MX,42.20109784095461,-71.69065051669772,165692,9.0,False,True
+white,nonhispanic,F,Lawrence  Massachusetts  US,42.27730901390839,-71.27674998642559,101211,7.0,False,False
+white,nonhispanic,F,Worcester  Massachusetts  US,42.38084409432391,-71.08053531387839,28222,8.0,True,True
+white,nonhispanic,F,Westfield  Massachusetts  US,41.70206734038906,-70.61718004868463,74124,9.0,False,False
+white,nonhispanic,M,North Adams  Massachusetts  US,42.72100899956367,-70.87873030955375,167393,11.0,False,False
+black,hispanic,F,San Salvador  El Salvador  SV,42.19031387644955,-72.60097265912353,73963,6.0,False,True
+black,nonhispanic,F,Springfield  Massachusetts  US,42.31877576742138,-71.00851334057492,345000,10.0,False,True
+white,nonhispanic,M,Southborough  Massachusetts  US,42.2900829227976,-71.45956374215683,12983,8.0,False,True
+black,nonhispanic,M,Middleton  Massachusetts  US,42.35687335245571,-71.95090405490367,132249,6.0,False,False
+white,nonhispanic,M,Natick  Massachusetts  US,41.88980048491455,-71.27925375221058,17580,12.0,False,False
+white,nonhispanic,M,Canton  Massachusetts  US,42.18769690152645,-71.02803120186047,3174,12.0,False,False
+white,nonhispanic,F,Leicester  Massachusetts  US,42.66316256539422,-70.71246125519617,75640,10.0,True,False
+white,nonhispanic,M,Westfield  Massachusetts  US,42.42733114016211,-71.6601560030338,106212,11.0,False,False
+white,nonhispanic,F,Norwood  Massachusetts  US,42.780491586293394,-71.21320020103192,88665,7.0,True,True
+black,nonhispanic,M,Ashfield  Massachusetts  US,42.10179210712024,-71.97662156056252,88508,12.0,True,False
+white,nonhispanic,M,Marshfield  Massachusetts  US,42.44435360142199,-73.28352119150622,6387,7.0,False,False
+white,nonhispanic,F,Princeton  Massachusetts  US,41.71420030599349,-70.0856250904187,72378,6.0,False,False
+black,nonhispanic,F,Boston  Massachusetts  US,42.63087130630485,-71.33220703018875,21884,11.0,False,True
+white,hispanic,F,Wayland  Massachusetts  US,42.3965944269153,-71.5645942595533,86473,9.0,False,True
+white,nonhispanic,F,Wendell  Massachusetts  US,41.61425184792104,-70.92187577185804,74068,10.0,False,False
+white,nonhispanic,F,Everett  Massachusetts  US,42.38350867022746,-72.50647675738821,27842,6.0,False,True
+asian,nonhispanic,M,Amherst Center  Massachusetts  US,42.28314188037436,-72.07306578544022,2697,11.0,True,False
+white,nonhispanic,M,Maynard  Massachusetts  US,42.17746853652996,-71.62220272811795,96307,6.0,False,False
+white,nonhispanic,M,Boston  Massachusetts  US,42.58023476880245,-71.84799938971662,23912,8.0,False,False
+white,nonhispanic,F,Methuen  Massachusetts  US,42.65481454280155,-71.32696231042746,32851,7.0,False,True
+white,nonhispanic,M,Mansfield  Massachusetts  US,41.7237403996023,-70.47792548552272,147759,7.0,False,False
+white,nonhispanic,F,Lexington  Massachusetts  US,42.37533664239199,-71.19482887534251,82746,10.0,True,True
+black,nonhispanic,F,Webster  Massachusetts  US,42.584728066021576,-71.12089710479098,152336,12.0,False,False
+white,nonhispanic,F,Truro  Massachusetts  US,42.0155274896532,-72.60900395663147,15082,10.0,False,True
+white,nonhispanic,M,Peabody  Massachusetts  US,42.2374630689221,-71.12899787703275,68365,9.0,True,True
+white,nonhispanic,F,Pittsfield  Massachusetts  US,42.38235370151202,-71.57095815887645,43885,6.0,False,True
+asian,nonhispanic,M,Quincy  Massachusetts  US,42.486122765282616,-71.30633297486344,702981,11.0,True,True
+white,nonhispanic,M,Newton  Massachusetts  US,42.46438539203251,-71.14037936954907,192967,7.0,False,True
+white,nonhispanic,M,Boston  Massachusetts  US,42.25068399351361,-70.97062173734004,26760,8.0,True,True
+white,nonhispanic,F,Boston  Massachusetts  US,41.959191290299216,-71.30517630101166,100202,10.0,True,False
+white,nonhispanic,F,Belmont  Massachusetts  US,42.16573345145282,-72.65755279361412,24016,8.0,False,True
+white,nonhispanic,M,Chicopee  Massachusetts  US,41.60970780876005,-70.99712322816336,11388,6.0,False,False
+white,nonhispanic,M,Somerset  Massachusetts  US,41.70284740373852,-70.89552577489545,40370,8.0,False,False
+asian,nonhispanic,F,Shanghai  Shanghai Municipality  CN,41.69303856458226,-70.50793485359866,138367,6.0,False,False
+white,hispanic,F,Wesley  Saint Andrew Parish  DM,41.621711301400005,-70.9866358576846,5602,10.0,True,False
+hawaiian,nonhispanic,F,Boston  Massachusetts  US,42.37271808297548,-71.02913060190308,130911,12.0,False,True
+white,nonhispanic,F,Boston  Massachusetts  US,42.32454590631564,-71.03232743336798,931266,8.0,True,True
+white,nonhispanic,F,Belmont  Massachusetts  US,42.03394523105119,-71.03524515822944,111850,6.0,False,False
+white,nonhispanic,M,Chicopee  Massachusetts  US,42.60220327383991,-72.93207695382456,21951,10.0,True,False
+white,nonhispanic,M,Greenfield  Massachusetts  US,42.69140850740549,-71.29517942293757,415109,7.0,False,True
+asian,nonhispanic,F,Shanghai  Shanghai Municipality  CN,42.32199804154816,-71.05351748702591,63566,10.0,False,True
+white,hispanic,M,Danvers  Massachusetts  US,42.22548544147269,-73.22760199019739,21218,11.0,True,False
+white,nonhispanic,F,Brookline  Massachusetts  US,42.090433182281465,-71.01439974948585,86928,11.0,False,False
+white,nonhispanic,F,Norton  Massachusetts  US,41.59829580489349,-70.5551329351069,195274,11.0,True,False
+white,nonhispanic,M,Chicopee  Massachusetts  US,42.46995489039243,-71.18896218920251,193930,6.0,False,False
+white,nonhispanic,M,Springfield  Massachusetts  US,42.56793749227907,-71.43961476816548,152055,8.0,False,False
+hawaiian,nonhispanic,F,Wayland  Massachusetts  US,42.10928752577843,-73.05236818963873,62023,8.0,False,False
+white,nonhispanic,M,Ware  Massachusetts  US,41.6021321702511,-70.980194190466,13444,10.0,False,False
+white,nonhispanic,F,Concord  Massachusetts  US,42.40525125876475,-71.04252355373794,2875,12.0,True,True
+white,nonhispanic,M,Brockton  Massachusetts  US,42.1174930545195,-71.02044820331551,12531,7.0,False,False
+asian,nonhispanic,M,Halifax  Massachusetts  US,42.14385924737311,-71.0884271574718,63966,8.0,False,False
+black,nonhispanic,M,Wayland  Massachusetts  US,41.67787769547564,-70.8348341856139,124083,7.0,False,False
+white,hispanic,F,Mexico City  Mexico City  MX,42.27253888909109,-72.2545550876632,69553,10.0,False,False
+white,hispanic,F,Bayamon  Puerto Rico  PR,42.03251256729418,-72.03269431998578,42494,9.0,True,True
+black,nonhispanic,M,Needham  Massachusetts  US,42.38004975030141,-71.05500773662389,23803,7.0,False,True
+white,nonhispanic,M,Amesbury  Massachusetts  US,42.72177024537944,-71.19796839562997,60777,7.0,False,True
+white,nonhispanic,M,Somerville  Massachusetts  US,42.647203276119136,-71.11517327531017,2904,7.0,True,True
+white,nonhispanic,M,New Bedford  Massachusetts  US,42.37128772398801,-71.1471150324247,13263,9.0,False,False
+white,nonhispanic,F,Southampton  Massachusetts  US,42.44623633867528,-71.6015537244331,68510,9.0,False,True
+white,nonhispanic,M,Quincy  Massachusetts  US,41.26065357103782,-70.11586214972513,14431,10.0,False,False
+white,hispanic,F,Ponce  Puerto Rico  PR,42.5082450805663,-71.03492363226755,10873,9.0,True,True
+white,hispanic,F,Leominster  Massachusetts  US,42.51686274985615,-71.86510491269463,34117,12.0,True,True
+white,nonhispanic,M,Wrentham  Massachusetts  US,42.31249304826861,-71.83613126057108,52712,8.0,False,True
+white,nonhispanic,M,Brookline  Massachusetts  US,42.065809857630384,-71.51264785402402,169835,11.0,True,True
+white,nonhispanic,M,Boston  Massachusetts  US,42.64909273701648,-71.3428640987694,96101,11.0,True,True
+white,hispanic,F,Juarez  Chihuahua  MX,42.10377443562939,-72.73879076197099,140550,12.0,True,True
+white,nonhispanic,F,Falmouth  Massachusetts  US,42.36632599666637,-71.28463068527523,145325,7.0,False,True
+white,nonhispanic,F,Boston  Massachusetts  US,41.68763298899947,-70.8504005392183,21712,6.0,False,False
+white,nonhispanic,F,Uxbridge  Massachusetts  US,41.69858030614934,-71.21865045944521,97072,11.0,True,True
+white,nonhispanic,M,Haverhill  Massachusetts  US,42.10060347931813,-70.9618327463647,47,11.0,True,False
+white,nonhispanic,M,Northfield  Massachusetts  US,42.05311359054756,-71.08147367436463,64257,12.0,True,False
+white,nonhispanic,M,Needham  Massachusetts  US,42.235377817536886,-70.80313851003613,557618,6.0,False,False
+white,nonhispanic,M,Abington  Massachusetts  US,42.54434421944284,-70.86793173760172,30243,12.0,False,False
+white,hispanic,M,Randolph  Massachusetts  US,42.262877920345936,-71.79139302148732,39219,12.0,True,True
+white,nonhispanic,F,Weymouth  Massachusetts  US,41.84681323401622,-71.36244971767515,84783,8.0,False,False
+white,hispanic,F,Brockton  Massachusetts  US,42.32183224813865,-71.0145094073661,82518,10.0,True,True
+white,nonhispanic,F,Somerville  Massachusetts  US,42.462698603882046,-71.19297998482325,323006,11.0,True,True
+white,nonhispanic,M,Barnstable  Massachusetts  US,42.03674750046247,-72.66521392253829,25409,11.0,True,True
+white,nonhispanic,M,Lynn  Massachusetts  US,42.40041290967963,-71.12973166672336,4430,6.0,False,True
+asian,hispanic,F,Santiago de los Caballeros  Santiago  DO,42.36745660924374,-71.09199501318929,175157,8.0,True,True
+white,nonhispanic,M,Methuen  Massachusetts  US,42.49067568615347,-71.65362531338835,119485,12.0,True,True
+white,nonhispanic,F,Southbridge  Massachusetts  US,42.61793500568727,-71.30531332171974,42817,6.0,False,True
+white,nonhispanic,M,West Brookfield  Massachusetts  US,42.55850392523287,-71.84383191634336,51824,6.0,True,False
+white,nonhispanic,F,Amherst  Massachusetts  US,42.460452996592046,-73.2563127442928,13991,6.0,False,False
+white,nonhispanic,M,Haverhill  Massachusetts  US,42.71916783647708,-71.08069310666876,36565,11.0,True,True
+white,nonhispanic,F,Arlington  Massachusetts  US,42.28886259232916,-72.90113655874895,80601,11.0,False,False
+white,nonhispanic,M,Seekonk  Massachusetts  US,42.62285399479222,-70.70484430229084,80658,9.0,False,False
+white,nonhispanic,M,Boston  Massachusetts  US,41.93529137515121,-71.37638316283852,80982,10.0,False,False
+white,nonhispanic,F,Yarmouth  Massachusetts  US,42.04251565585453,-72.62622200998895,23305,9.0,True,True
+white,nonhispanic,F,Andover  Massachusetts  US,42.42000063083837,-71.42408952544686,123324,11.0,False,False
+white,nonhispanic,F,Lynn  Massachusetts  US,41.64497790899943,-70.96147218244847,89860,6.0,False,False
+white,nonhispanic,M,Lynn  Massachusetts  US,42.45301639594605,-71.05880262775312,91216,8.0,False,True
+other,nonhispanic,F,Haverhill  Massachusetts  US,41.63207824476071,-70.3098150716074,517091,11.0,False,False
+white,nonhispanic,M,East Longmeadow  Massachusetts  US,42.455757955805176,-71.6147179018291,25428,11.0,True,True
+white,nonhispanic,M,Braintree  Massachusetts  US,42.34220332498425,-71.32746691142789,638815,11.0,True,True
+white,nonhispanic,M,Yarmouth  Massachusetts  US,42.84416948463427,-71.00964030121816,134987,10.0,True,True
+white,nonhispanic,F,Ashland  Massachusetts  US,42.210696932039866,-70.71315376653753,954302,10.0,False,False
+white,nonhispanic,M,Tewksbury  Massachusetts  US,42.19825986529169,-70.90354681037435,40808,11.0,True,False
+black,nonhispanic,F,Lenox  Massachusetts  US,42.2366521211517,-71.01851240644477,119386,10.0,False,False
+white,nonhispanic,M,Springfield  Massachusetts  US,42.35867046190255,-71.17044632655576,106343,8.0,False,True
+white,nonhispanic,M,New Bedford  Massachusetts  US,42.5605386323524,-71.26124507700008,23372,12.0,True,True
+white,nonhispanic,F,Brockton  Massachusetts  US,41.93361478757687,-70.60567101920182,86668,6.0,False,True
+white,nonhispanic,F,Dracut  Massachusetts  US,42.34750175629956,-71.09755964688382,39921,11.0,True,True
+white,nonhispanic,F,Quincy  Massachusetts  US,42.47510890579534,-71.45104319040671,176124,12.0,True,True
+white,nonhispanic,M,Nice  Provence-Alpes-Cote d'Azur  FR,42.07266494169066,-71.47408699319827,5734,12.0,True,True
+white,hispanic,F,Weymouth  Massachusetts  US,42.15202139254717,-72.77040800338472,689499,12.0,True,True
+white,nonhispanic,F,North Westport  Massachusetts  US,42.58983915369593,-71.44997425229299,493720,9.0,True,False
+white,nonhispanic,F,Chicopee  Massachusetts  US,42.51481870845103,-73.25557308949256,47754,11.0,False,False
+white,nonhispanic,M,Springfield  Massachusetts  US,42.14940330779135,-71.50783273530189,136888,8.0,False,False
+white,nonhispanic,F,Danvers  Massachusetts  US,42.32515530831696,-71.07157906692169,111248,9.0,False,True
+white,nonhispanic,F,Revere  Massachusetts  US,42.50131825861383,-71.63944854039494,132269,11.0,True,True
+white,hispanic,M,La Paz  Baja California  MX,42.57730161220321,-71.07175307850868,85240,12.0,False,False
+white,nonhispanic,M,Sharon  Massachusetts  US,42.6314329214734,-71.07128640705923,15792,12.0,True,True
+black,nonhispanic,M,Franklin  Massachusetts  US,42.30680909890963,-71.12124465623594,10003,8.0,True,True
+asian,nonhispanic,F,Swampscott  Massachusetts  US,42.12233726115481,-71.22737593253257,57372,9.0,True,True
+white,nonhispanic,M,Amherst Center  Massachusetts  US,42.46119916849762,-71.4020260922575,810458,12.0,True,True
+white,nonhispanic,F,Quincy  Massachusetts  US,42.61159096658964,-71.14068413958042,31634,11.0,True,True
+white,nonhispanic,M,Mashpee  Massachusetts  US,42.16354903510712,-71.16037080035944,45796,6.0,False,True
+asian,nonhispanic,F,Haiphong  Kiến An  VN,42.36118407571769,-71.22020462261442,164716,11.0,False,True
+white,hispanic,F,Port-au-Prince  Haiti  HT,42.61635657167255,-70.97357337136181,114303,9.0,False,False
+white,nonhispanic,M,Southwick  Massachusetts  US,42.36692059942583,-71.05847883608273,156298,10.0,False,True
+white,nonhispanic,F,Newton  Massachusetts  US,42.57942574014539,-71.26935506970904,120877,12.0,True,True
+asian,nonhispanic,F,Sudbury  Massachusetts  US,42.50121784357364,-71.11011504180094,860373,7.0,False,True
+white,nonhispanic,M,North Scituate  Massachusetts  US,42.75653509021521,-71.19049932563242,5349,9.0,False,True
+white,nonhispanic,F,Fitchburg  Massachusetts  US,42.18293009796238,-70.83613175127824,21894,11.0,False,False
+white,nonhispanic,M,West Concord  Massachusetts  US,41.83347199604561,-70.66587949540019,43061,9.0,True,True
+white,hispanic,F,San Salvador  El Salvador  SV,42.00547351375073,-72.54880941537533,180978,12.0,False,False
+white,nonhispanic,M,Shutesbury  Massachusetts  US,42.099984200554125,-71.57319025146218,70425,10.0,False,False
+white,nonhispanic,F,Lunenburg  Massachusetts  US,42.39336293068891,-71.5959656766313,153549,12.0,False,True
+white,nonhispanic,F,Melrose  Massachusetts  US,42.33220295467805,-71.32558562185335,24842,10.0,False,True
+white,nonhispanic,M,Andover  Massachusetts  US,42.22017865481829,-71.12969239281313,990714,9.0,False,False
+white,nonhispanic,F,East Longmeadow  Massachusetts  US,42.1440893159558,-71.19092854951614,877546,7.0,False,True
+asian,nonhispanic,F,Avon  Massachusetts  US,41.71731244608388,-71.16685701910137,81871,11.0,False,False
+white,nonhispanic,F,West Springfield  Massachusetts  US,42.237476942607465,-70.97113141080395,19905,11.0,True,True
+asian,nonhispanic,F,Osaka  Osaka  JP,42.39234794762002,-71.13266448048992,56116,12.0,False,True
+white,nonhispanic,M,Boston  Massachusetts  US,42.05513885502641,-72.59958361161029,12123,8.0,False,True
+white,nonhispanic,M,Attleboro  Massachusetts  US,42.27018635692541,-70.85028349711594,192177,11.0,False,False
+white,nonhispanic,F,Taunton  Massachusetts  US,42.13000129882168,-71.51731846692684,131003,10.0,True,False
+white,nonhispanic,M,Rowley  Massachusetts  US,42.08972742721779,-71.15800876040798,62070,8.0,True,True
+white,nonhispanic,M,Somerset  Massachusetts  US,41.77267389855455,-71.20284644964259,43324,9.0,True,True
+asian,nonhispanic,F,Rockport  Massachusetts  US,42.45083581369416,-71.13592343671411,188685,9.0,False,False
+white,nonhispanic,F,West Newbury  Massachusetts  US,42.64128157707018,-71.08769359348386,134376,7.0,False,True
+white,nonhispanic,M,Whitman  Massachusetts  US,42.114076489013385,-71.46044657751537,199676,11.0,False,False
+black,nonhispanic,M,Charlton  Massachusetts  US,42.37510420831918,-71.09519287405317,5604,9.0,True,True
+white,nonhispanic,M,Medfield  Massachusetts  US,42.38975837720009,-71.09749860985903,503116,7.0,False,True
+white,nonhispanic,F,Lawrence  Massachusetts  US,41.88411618136888,-70.83498104511742,106862,8.0,False,False
+white,nonhispanic,F,Revere  Massachusetts  US,41.704419329764754,-70.78856963705705,156404,11.0,True,False
+white,nonhispanic,F,Kraków  Lesser Poland  PL,42.01708105935855,-71.15707639575494,501045,12.0,True,True
+white,nonhispanic,F,West Concord  Massachusetts  US,41.566047621917,-71.03641949519123,57153,7.0,False,False
+white,nonhispanic,M,Northborough  Massachusetts  US,42.48940660335433,-71.72288369826171,17330,6.0,False,False
+white,nonhispanic,F,Weston  Massachusetts  US,41.8272986274576,-71.0019661855821,143941,6.0,False,False
+white,nonhispanic,M,Grafton  Massachusetts  US,42.70521573173621,-71.29092831883361,100274,9.0,False,True
+white,nonhispanic,M,Agawam  Massachusetts  US,41.96315335021977,-70.85266291622405,101882,8.0,True,True
+white,nonhispanic,M,Milford  Massachusetts  US,42.287324392527,-71.64174192413081,86718,7.0,False,True
+white,nonhispanic,F,Grafton  Massachusetts  US,42.35719381613183,-71.09234688643994,349197,6.0,False,True
+white,hispanic,F,Boston  Massachusetts  US,42.239411607864135,-73.32794487600873,18639,8.0,False,False
+white,nonhispanic,M,Boston  Massachusetts  US,42.565981339252986,-71.02948150997626,129494,8.0,False,False
+white,hispanic,F,Barnstable  Massachusetts  US,42.81502128951501,-70.87105693475455,180772,8.0,True,True
+white,hispanic,F,Dartmouth  Massachusetts  US,42.16014911133208,-72.6400639075954,1475,11.0,True,True
+white,nonhispanic,M,Northampton  Massachusetts  US,42.39294132987348,-71.11349428903671,182457,6.0,False,False
+white,nonhispanic,M,Boston  Massachusetts  US,42.13168364991617,-70.97290753262544,136433,7.0,False,False
+hawaiian,nonhispanic,F,Revere  Massachusetts  US,42.37256707277533,-71.53939080033764,57683,6.0,False,False
+asian,nonhispanic,F,Haverhill  Massachusetts  US,42.33848058779812,-71.64111201638367,120037,11.0,True,True
+white,nonhispanic,M,Boston  Massachusetts  US,42.58334309816294,-73.12255886217812,29618,8.0,True,True
+white,nonhispanic,F,Concord  Massachusetts  US,42.38153734476238,-71.90326005821375,83535,11.0,True,False
+white,nonhispanic,M,New Bedford  Massachusetts  US,42.10058622553774,-71.28621445402922,14526,6.0,True,True
+white,nonhispanic,M,Charlton  Massachusetts  US,42.512151159634,-70.84259459502717,75957,8.0,False,False
+white,nonhispanic,F,Fall River  Massachusetts  US,41.98092579674277,-71.36405020842263,159176,12.0,True,True
+white,hispanic,F,Canton  Massachusetts  US,42.34185732097339,-71.02649089115745,31107,7.0,False,True
+white,nonhispanic,M,Chelmsford  Massachusetts  US,42.54474944750685,-71.98682205982463,85212,8.0,False,False
+white,nonhispanic,M,Swampscott  Massachusetts  US,42.30910757914863,-71.12959798053414,157480,9.0,True,True
+white,nonhispanic,M,Revere  Massachusetts  US,42.28761101109416,-71.43728559215248,110083,7.0,False,True
+white,hispanic,F,Salisbury  Saint Joseph Parish  DM,42.45257385145312,-70.98760593706302,45579,8.0,False,False
+white,nonhispanic,M,Fitchburg  Massachusetts  US,42.600797654847774,-71.93444947297857,198175,6.0,False,True
+white,nonhispanic,M,Longmeadow  Massachusetts  US,41.69782645933671,-70.28190229117094,61508,11.0,True,False
+white,hispanic,M,Caracas  Capital District  VE,42.4359409371819,-71.08686240946155,83623,8.0,False,True
+black,nonhispanic,M,Dennis  Massachusetts  US,42.160400610824766,-72.41640713887146,28915,10.0,False,False
+white,nonhispanic,M,Oak Bluffs  Massachusetts  US,42.16229184377425,-70.99230173677948,64182,9.0,False,False
+white,nonhispanic,F,Worcester  Massachusetts  US,42.486161208060736,-71.05022707698733,95021,11.0,False,True
+white,nonhispanic,M,Newton  Massachusetts  US,42.22316704161637,-71.5650409880081,197349,9.0,True,False
+white,nonhispanic,F,Westwood  Massachusetts  US,42.38588649029288,-72.11652926870714,26156,6.0,False,False
+white,nonhispanic,M,Saugus  Massachusetts  US,42.35593489795976,-71.14893442890465,12688,11.0,True,True
+black,nonhispanic,F,Framingham  Massachusetts  US,42.307703671401136,-71.15882009141441,8883,11.0,True,True
+white,nonhispanic,F,Springfield  Massachusetts  US,41.696040194416206,-70.09812942313215,14083,10.0,True,False
+white,nonhispanic,F,Shrewsbury  Massachusetts  US,41.99599287996078,-70.7885956776219,82351,10.0,True,True
+white,nonhispanic,F,Bridgewater  Massachusetts  US,42.450288553731006,-71.70289053270032,56691,7.0,False,False
+asian,nonhispanic,F,Orange  Massachusetts  US,42.265146296180994,-71.20143508043085,837548,12.0,True,True
+white,nonhispanic,F,Bridgewater  Massachusetts  US,41.67183273947246,-70.17904488869821,65607,12.0,True,False
+white,nonhispanic,M,Sandwich  Massachusetts  US,42.61476519201755,-71.13080216163816,27356,7.0,True,True
+white,nonhispanic,M,Westport  Massachusetts  US,42.247470285837416,-71.49366475671901,140643,12.0,True,False
+white,hispanic,M,Juarez  Chihuahua  MX,42.66473887265731,-71.12479973659542,19221,12.0,False,True
+white,nonhispanic,F,Acushnet  Massachusetts  US,42.26385485072903,-71.84961912032685,38073,10.0,True,True
+white,nonhispanic,M,Fall River  Massachusetts  US,42.380049548275714,-71.10500294206548,65996,10.0,False,True
+white,nonhispanic,M,Methuen  Massachusetts  US,42.5069378870072,-71.05113345130229,66682,10.0,False,True
+white,nonhispanic,F,Milton  Massachusetts  US,42.18057554328524,-70.94311655478263,83728,6.0,False,True
+white,nonhispanic,M,Worcester  Massachusetts  US,42.1585886916536,-72.21491791944965,151172,8.0,False,False
+white,hispanic,F,San Juan  Puerto Rico  PR,42.37211603576197,-72.48074809121935,138842,7.0,False,True
+white,nonhispanic,F,Amesbury  Massachusetts  US,42.54008128025964,-70.85579501422498,481217,8.0,False,False
+white,nonhispanic,M,Milton  Massachusetts  US,42.80108044140287,-71.06198943653615,126851,8.0,False,False
+white,nonhispanic,F,Attleboro  Massachusetts  US,42.62654108693168,-71.8320162053819,73198,11.0,False,False
+white,nonhispanic,M,Wellesley  Massachusetts  US,42.307152626147214,-70.99330326184653,61365,11.0,True,True
+white,nonhispanic,F,Northborough  Massachusetts  US,42.67112002885546,-71.28457897252913,73815,10.0,False,True
+asian,nonhispanic,M,Lexington  Massachusetts  US,42.62173065963502,-72.03723420043282,48762,7.0,False,False
+white,nonhispanic,M,Boston  Massachusetts  US,42.1195144517191,-71.4549145341322,121259,8.0,True,True
+black,nonhispanic,M,Boston  Massachusetts  US,41.89014795156766,-70.71886009787276,45517,8.0,False,False
+white,hispanic,F,Caracas  Capital District  VE,41.66540581826706,-70.97348782587486,65452,10.0,False,False
+white,nonhispanic,F,Boston  Massachusetts  US,42.55546529852458,-71.95091082510591,126912,8.0,False,False
+white,nonhispanic,F,Reading  Massachusetts  US,42.15256520122737,-72.10870501637807,812602,6.0,False,False
+black,nonhispanic,F,Whitman  Massachusetts  US,42.015758663353374,-71.35767030935891,5824,10.0,False,False
+white,nonhispanic,F,Quincy  Massachusetts  US,42.5733343459968,-71.15058399309218,141803,6.0,False,False
+white,nonhispanic,F,Salem  Massachusetts  US,42.31617079348654,-71.17631380509728,52693,9.0,False,True
+asian,nonhispanic,F,Dartmouth  Massachusetts  US,42.45629994246433,-71.12033435555927,100332,9.0,False,True
+white,hispanic,M,San Jose  San Jose  CR,42.185344788171065,-72.79270070210804,82511,8.0,False,True
+white,nonhispanic,F,Somerville  Massachusetts  US,42.33734817959164,-71.0888220130054,941059,6.0,False,True
+asian,nonhispanic,F,Cohasset  Massachusetts  US,42.576826913564105,-71.0049856338159,12711,8.0,True,True
+white,nonhispanic,M,Duxbury  Massachusetts  US,42.58983771382129,-71.7951650903652,50414,8.0,False,False
+white,nonhispanic,M,New Bedford  Massachusetts  US,41.85877392967221,-70.84748688563663,72053,7.0,False,False
+white,nonhispanic,M,Montague  Massachusetts  US,42.53017570326163,-71.29340057333087,148161,10.0,False,True
+white,nonhispanic,F,Williamstown  Massachusetts  US,41.74474432841498,-70.71175297319182,352408,7.0,False,False
+white,nonhispanic,M,Weymouth  Massachusetts  US,42.57292663398396,-71.56727257379012,119498,7.0,False,False
+white,nonhispanic,M,Malden  Massachusetts  US,42.649010810326565,-71.13337338936785,9998,11.0,False,True
+white,hispanic,M,Marigot  Saint Andrew Parish  DM,42.54201303921256,-72.27665149090903,51584,11.0,True,False
+white,nonhispanic,M,Lowell  Massachusetts  US,41.68228297459548,-71.20440084533325,863975,10.0,False,True
+white,nonhispanic,F,Charlton  Massachusetts  US,42.40738632276181,-71.20050649368213,91576,6.0,False,True
+white,nonhispanic,M,Marlborough  Massachusetts  US,42.157890724641,-70.97213557598403,729013,7.0,False,False
+white,nonhispanic,F,Agawam  Massachusetts  US,42.85180090741246,-70.85443540262294,30804,10.0,True,True
+asian,nonhispanic,M,Braintree  Massachusetts  US,42.46059541920028,-71.10385432319848,3836,11.0,True,True
+white,nonhispanic,M,Duxbury  Massachusetts  US,42.60767389468043,-70.99014815071757,71112,11.0,False,False
+white,nonhispanic,M,Medford  Massachusetts  US,42.02415500416426,-71.97132274941988,107333,12.0,True,True
+white,nonhispanic,F,Boston  Massachusetts  US,41.9365253213307,-71.2212192924215,27093,12.0,True,False
+white,hispanic,F,Lima  Lima Province  PE,42.520395199046106,-71.24233361132619,120737,9.0,False,True
+white,nonhispanic,M,Canton  Massachusetts  US,41.62117552528184,-70.59456128497543,111565,11.0,False,False
+white,nonhispanic,M,West Bridgewater  Massachusetts  US,42.0198898822789,-72.59776234413357,24602,10.0,True,True
+white,nonhispanic,F,Newton  Massachusetts  US,42.16648184794486,-72.5962096042374,22280,7.0,False,True
+black,nonhispanic,F,Whitinsville  Massachusetts  US,42.573716263814646,-71.15813895068345,52569,9.0,False,False
+white,nonhispanic,F,Boston  Massachusetts  US,42.501865202764414,-70.90484297523773,28048,11.0,True,True
+white,nonhispanic,F,Hanover  Massachusetts  US,42.64241400806144,-72.55378133745343,1051,12.0,True,False
+white,nonhispanic,M,Holyoke  Massachusetts  US,42.09526314925068,-72.07400544628022,636706,11.0,True,False
+white,nonhispanic,F,Hanover  Massachusetts  US,42.69813829160214,-71.3120923289977,882732,11.0,False,True
+white,nonhispanic,F,Attleboro  Massachusetts  US,42.552474645987495,-71.07003773489934,962283,7.0,False,False
+white,nonhispanic,M,Waltham  Massachusetts  US,42.63673177074924,-71.148571817409,113713,11.0,False,True
+white,nonhispanic,F,Boston  Massachusetts  US,42.08044480476897,-71.42620885270368,64071,8.0,False,True
+white,hispanic,F,Boston  Massachusetts  US,42.0619701202354,-71.39088579413092,117197,12.0,False,False
+black,hispanic,F,Caracas  Capital District  VE,42.70412685985118,-71.1329851923107,132151,7.0,False,False
+white,hispanic,M,Salisbury  Saint Joseph Parish  DM,42.34025322971966,-71.4396055080265,633626,11.0,True,True
+white,nonhispanic,F,Holyoke  Massachusetts  US,41.9807032780593,-71.35455649709169,143759,11.0,False,False
+white,nonhispanic,F,Athol  Massachusetts  US,42.17337833330554,-72.55185012941982,9986,9.0,True,True
+white,nonhispanic,F,Revere  Massachusetts  US,42.41977076534089,-71.06758855764986,69163,9.0,False,True
+asian,nonhispanic,F,Beijing  Beijing Municipality  CN,42.611107664611154,-71.43578235978923,71362,7.0,False,False
+white,nonhispanic,F,Springfield  Massachusetts  US,41.30756930116136,-70.14267222357357,37806,8.0,False,False
+white,nonhispanic,F,Chicopee  Massachusetts  US,41.60351063271635,-70.96263724845875,61187,10.0,True,False
+white,nonhispanic,F,Melrose  Massachusetts  US,42.24521911260587,-70.84405659189801,32532,11.0,True,False
+white,nonhispanic,F,Montague  Massachusetts  US,42.6816831585458,-71.13937939032002,15175,10.0,False,True
+black,nonhispanic,M,Middleborough  Massachusetts  US,42.36121943486853,-71.07955579135714,1366,8.0,False,True
+hawaiian,nonhispanic,F,Essex  Massachusetts  US,42.42774594675055,-71.1464849175517,69198,8.0,False,True
+black,nonhispanic,F,Boston  Massachusetts  US,42.22023844387395,-70.97335557708088,537331,8.0,False,False
