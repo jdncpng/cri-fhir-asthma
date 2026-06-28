@@ -11,16 +11,25 @@
 # | DAMIAN RYCHLICKI | 572581               |
 #
 # Additional information:
-#   used additional packages: {Package name and version}
-#   dataset used: {dataset or file name}
+#   used additional packages: numpy, seaborn, matplotlib
+#   datasets used: Coding Data 02 - standard
 ###################################################################
 
 # Please add this header to all your submissions and adapt it to your information and submission.
 # The following structure is a recommendation, but not mandatory to use
 
-from datetime import date
+# import dependencies
 import numpy as np
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from datetime import date # not used yet but maybe in future
+
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_colwidth', None)
+pd.set_option('display.expand_frame_repr', False)
+
 
 # --------------------------------------------------
 # Functions
@@ -34,14 +43,11 @@ def calculate_age_in_years(birth_dates: pd.Series, reference_dates: pd.Series) -
     """Calculate age in whole years between birth dates and reference dates."""
     return ((reference_dates - birth_dates).dt.days / 365.2425)
 
-
 def calc_current_age(birthday):
     today = pd.to_datetime('now')
     age = pd.to_timedelta(today - birthday)
     age = age.dt.days / 365.2425
     return np.round(age)
-
-
 
 def add_age_at_condition_start(conditions: pd.DataFrame, patients: pd.DataFrame) -> pd.DataFrame:
     """Add patient age at condition start to the conditions DataFrame."""
@@ -53,7 +59,6 @@ def add_age_at_condition_start(conditions: pd.DataFrame, patients: pd.DataFrame)
     )
     return conditions
 
-
 def filter_patients_by_age(
     patients: pd.DataFrame,
     min_age: int,
@@ -63,18 +68,25 @@ def filter_patients_by_age(
     """Filter patient records to those with age within the given range (inclusive)."""
     return patients[(patients[age_column] >= min_age) & (patients[age_column] <= max_age)].copy()
 
+# method to only include patients with certain conditions
 def get_encounter_numbers_per_patient(df_enc, code):
     return df_enc[df_enc["CODE"] == code]["PATIENT"].value_counts()
+
+def transform_air_data(df_air: pd.DataFrame):
+    df_air = df_air.rename(columns={"Measurement_avg pm25": "avg_pm25"})
+    df_air_pivot = df_air.pivot(index="County", columns='Year')
+    df_air_pivot.columns = ['_'.join(str(c) for c in col) for col in df_air_pivot.columns]
+    df_air_pivot = df_air_pivot.reset_index()  # bring County back as a real column for the merge
+    return df_air_pivot
 
 # --------------------------------------------------
 # Main Script
 # --------------------------------------------------
 
 # Week 5
-
 print("WEEK 5")
-# Please import these files as Pandas DataFrames, 
-# and provide print statements, that show for each file the number of variables (columns) and entries (rows).
+
+# import files as Pandas DataFrames, and provide print statements, that show for each file the number of variables (columns) and entries (rows).
 DATA_FILES = {
     "patients": "patients.csv",
     "conditions": "conditions_reduced.csv",
@@ -103,25 +115,20 @@ for name, filename in DATA_FILES.items():
 
 patients = dataframes["patients"]
 
-
 # Add the patients current age to the patient DataFrame and their age at the beginning of the conditions to the conditions DataFrame. 
-# Provide print statements showing the average patient age and average age at condition start.
-
 patients["current_age"] = calc_current_age(patients["BIRTHDATE"])
 dataframes["conditions"] = add_age_at_condition_start(dataframes["conditions"], patients)
 
+print("\n")
 print("Average patient age: {:.2f} years".format(patients["current_age"].mean()))
 print("Average age at condition start: {:.2f} years".format(dataframes["conditions"]["age_at_start"].mean()))
 
-
-# In our study, we want to analyse children with a current age between 6 and 12. 
-# Create a method that filters the patient table to only include records with a current age within that range. 
-# Print the number of records before and after filtering.
-
+# a method that filters the patient table to only include records with a current age within 6-12. 
 records_before = len(patients)
 patients_children_6_12 = filter_patients_by_age(patients, min_age=6, max_age=12)
 records_after = len(patients_children_6_12.index)
 
+print("\n")
 print("All Patients: {}".format(records_before))
 print("Only Children:  {}".format(records_after))
 
@@ -138,7 +145,7 @@ asthma_pat.drop_duplicates()
 asthma_list = asthma_pat.tolist()
 
 asthma_child = patients_children_6_12[patients_children_6_12['Id'].isin(asthma_list)]
-print(f"Only affected Children: {len(asthma_child)}")
+print(f"\nOnly affected Children: {len(asthma_child)}")
 
 asthma_child_list = asthma_child["Id"].tolist()
 
@@ -156,12 +163,12 @@ for name, filename in DATA_FILES.items():
 
 df_amount = dataframes["conditions"].groupby(["PATIENT"]).count()
 df_more = df_amount.query('CODE > 1')
-print(f"Number of children with asthma with more than one condition: {len(df_more)}")
+print(f"\nNumber of children with asthma with more than one condition: {len(df_more)}")
 
 # What is the maximum number of conditions associated with a patient?
 
 df_max = df_more["CODE"].max()
-print(f"Maximum number of conditions associated with a patient: {df_max}")
+print(f"\nMaximum number of conditions associated with a patient: {df_max}")
 
 
 #Consider ways to quantify the health status of these asthmatic children. Extract relevant information from the available datasets and add them to the patient DataFrame. 
@@ -184,9 +191,100 @@ patients["ASTHMA_FU_ENCOUNTER"] = get_encounter_numbers_per_patient(dataframes["
 #DATA FOR NEXT WEEK
 patients.to_csv("week_5_data.csv", index=True)
 
-print()
-
 # Week 6 
+print("Week 6")
+
+# Importing the air quality dataset
+df_pat = pd.read_csv("week_5_data.csv")
+df_pat = df_pat.rename(columns={"current_age": "CURRENT_AGE"})
+df_air = pd.read_csv("cri_air_pollution.csv")
+
+# the number of counties in data.
+print(df_pat.head())
+print("\n")
+print(df_air.head())
+print(f"\nCounties available: {df_air['County'].nunique()}")
+
+# transforming to wide format for merge
+df_air = transform_air_data(df_air)
+
+# Merge the air pollution data with the patient data. We will use an inner join to keep all patients, 
+# and add air pollution data where available based on the CITY/COUNTY match.
+df_pat = pd.merge(left=df_pat, right=df_air, left_on="CITY", right_on="County")
+
+# Drop the duplicates
+#df_pat = df_pat.drop(columns=["Id.1"])
+
+# descriptive statistics
+print("\nDescriptive statistics of air quality data")
+print("We see a slight decline in average concentration of airbone particles as years go by.")
+print("\n")
+print(df_air.describe())
+
+severity_cols = [
+    "CURRENT_AGE",
+    "TOTAL_CONDITIONS",
+    "TOTAL_ENCOUNTER",
+    "ASTHMA_REASON_ENCOUNTER",
+    "ASTHMA_FU_ENCOUNTER",
+    "SYMPTOM_ENCOUNTER",
+    "URGENT_CARE_ENCOUNTER",
+    "EMERGENCY_ENCOUNTER",
+    "avg_pm25_2024"
+]
+
+# using pairplot for a general overview of relationships between air pollution and severity measures. 
+# We will do more specific analyses later, but this is a good starting point to get a sense of the data.
+
+pairplot = sns.pairplot(df_pat[severity_cols])
+pairplot.savefig("6_severity_pairplot.png", bbox_inches="tight", dpi=150)
+plt.close() 
+
+# Correlation heatmap to see the strength of relationships between air pollution and severity measures.
+
+corr = df_pat[severity_cols].corr()
+
+fig, ax = plt.subplots(figsize=(12,10))
+sns.heatmap(corr, annot=True, fmt=".2f", cmap="viridis", ax=ax)
+ax.set_title("Correlation Matrix of PM2.5 and Severity Measures")
+plt.tight_layout()
+plt.savefig("6_correlation_heatmap.png", bbox_inches="tight", dpi=150)
+plt.close()
+
+# create additional categories such as whether asthma condition is severe, and if a county is highly polluted
+
+df_pat.loc[:, "IS_SEVERE"] = df_pat["ASTHMA_REASON_ENCOUNTER"] > df_pat["ASTHMA_REASON_ENCOUNTER"].median()
+df_pat.loc[:, "HIGH_POLLUTION"] = df_pat["avg_pm25_2024"] > df_pat["avg_pm25_2024"].mean()
+
+print("\n")
+print(df_pat[["IS_SEVERE", "HIGH_POLLUTION"]].describe())
+
+# boxplot and regression plot to explore asthma severity vs air pollution
+fig, ax = plt.subplots()
+sns.boxplot(data=df_pat, x="HIGH_POLLUTION", y="ASTHMA_REASON_ENCOUNTER", hue="HIGH_POLLUTION", palette="viridis")
+ax.set_title("Distribution of Asthma Encounters in polluted areas")
+plt.tight_layout()
+plt.savefig("6_boxplot_highpoll.png", bbox_inches="tight", dpi=150)
+plt.close()
+
+fig, ax = plt.subplots()
+sns.boxplot(data=df_pat, x="IS_SEVERE", y="avg_pm25_2024", hue="IS_SEVERE", palette="viridis")
+ax.set_title("Asthma Severity according to air pollution measurements")
+plt.tight_layout()
+plt.savefig("6_boxplot_severe.png", bbox_inches="tight", dpi=150)
+plt.close()
+
+fig, ax = plt.subplots()
+sns.regplot(data=df_pat, x="avg_pm25_2024", y="ASTHMA_REASON_ENCOUNTER")
+ax.set_title("Air pollution VS Asthma encounters")
+plt.tight_layout()
+plt.savefig("6_regplot.png", bbox_inches="tight", dpi=150)
+plt.close()
+
+# export patient data to csv file
+
+df_pat.to_csv("week_6_data.csv", index=False)
+
 
 # Week 7 L
 
