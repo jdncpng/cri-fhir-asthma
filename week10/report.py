@@ -286,7 +286,7 @@ plt.close()
 df_pat.to_csv("week_6_data.csv", index=False)
 
 
-# Week 7 L
+# Week 7
 
 # Week 8 
 
