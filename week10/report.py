@@ -388,6 +388,134 @@ print()
 
 # Week 9
 
+print("WEEK 9")
+
+# 1.1 Load the original and anonymized datasets into your Python environment and compare them.
+# For the anonymized dataset you can built upon last week’s exercise. Your anonymized dataset should
+# at least be 2-anonymous and feature RACE, ETHNICITY, GENDER and your primary outcomes as
+# “Quasi-identifying” attributes. Use descriptive statistics (similar to exercise 7, 1.1) and
+# visualizations (e.g., histograms, box plots) to compare the distributions of key variables.
+
+    # Original data from exercise 6 / 7
+df = pd.read_csv("week_6_data.csv")
+
+# Anonymized data exported from ARX (based on hu-assignment-08-example.deid)
+df_anon = pd.read_csv("08_anonymised.csv", keep_default_na=False)
+
+
+df_analysis = df[['DEATHDATE', 'RACE', 'ETHNICITY', 'GENDER', 'CURRENT_AGE', 'TOTAL_ENCOUNTER', 'ASTHMA_REASON_ENCOUNTER', 'URGENT_CARE_ENCOUNTER', 'ASTHMA_FU_ENCOUNTER', 'avg_pm25_2023', 'IS_SEVERE', 'HIGH_POLLUTION']]
+print("Descriptive statistics in file \"decriptive_week9.csv\"")
+df_analysis.describe(include="all").to_csv("decriptive_week9.csv", sep=';', index=False)
+
+df_anon_lys = df_anon[['DEATHDATE', 'RACE', 'ETHNICITY', 'GENDER', 'CURRENT_AGE', 'TOTAL_ENCOUNTER', 'ASTHMA_REASON_ENCOUNTER', 'URGENT_CARE_ENCOUNTER', 'ASTHMA_FU_ENCOUNTER', 'Measurement_avg pm25_2023', 'IS_SEVERE', 'HIGH_POLLUTION']]
+print("Descriptive statistics in file \"anon_decriptive_week9.csv\"")
+df_anon_lys.describe(include="all").to_csv("anon_decriptive_week9.csv", sep=';', index=False)
+
+# Boxplot for visual analysis
+for column in df_anon_lys:
+    # Box plot
+    sns.boxplot(df_anon_lys[column])
+    graph_title = "Box Plot for " + column
+    plt.title(graph_title)
+    plt.savefig(column + "_boxplot.png", bbox_inches="tight", dpi=150)
+    plt.close()
+
+# 1.2 What changes do you see after anonymization (e.g. in regard to outliers and data types)?
+
+print("Some datapoint are hidden. Which skews the previous results.")
+
+# 2.1 Execute your previously developed Python analysis scripts which you used to evaluate your hypothesis (exercise 7, 2.1 and 2.2.) on the original and the anonymized dataset. 
+# If needed adapt either the anonymization process or your analysis script to be able to study the relationship between air pollution and asthma severity.
+
+# 2.1 State the research hypothesis.
+print("2.1 Hypothesis on Original")
+print(
+"H0 (null hypothesis): There is no association between high air pollution exposure "
+        "(HIGH_POLLUTION) and severe asthma (IS_SEVERE) in children.\n"
+        "H1 (alternative hypothesis): Children exposed to high air pollution are more likely "
+        "to have severe asthma than children exposed to low air pollution.")
+
+# 2.2 Choose and apply an appropriate statistical test.
+print("2.2 Statistical testing on Original")
+
+print(f"\nSample size after cleaning: n = {len(df_analysis)}")
+print("\nBoth primary parameters are binary/categorical (IS_SEVERE, HIGH_POLLUTION), "
+  "so a chi-square test of independence is appropriate.")
+
+contingency_table = pd.crosstab(df_analysis["IS_SEVERE"], df_analysis["HIGH_POLLUTION"])
+print("\nContingency table (IS_SEVERE vs HIGH_POLLUTION):")
+print(contingency_table)
+
+print("\nGroup balance (HIGH_POLLUTION):")
+print(df_analysis["HIGH_POLLUTION"].value_counts())
+
+chi2, p_value, dof, expected = stats.chi2_contingency(contingency_table)
+print("\nSelected test: Chi-square test of independence")
+print("Assumptions: independent observations; expected frequencies >= 5 per cell.")
+print(f"Test statistic (chi-square): {chi2:.4f}")
+print(f"Degrees of freedom: {dof}")
+print(f"p-value: {p_value:.4e}")
+alpha = 0.05
+if p_value < alpha:
+    print(
+            f"Interpretation: p < {alpha}, so we reject H0. There is a statistically significant "
+            "association between high pollution exposure and severe asthma in this cohort."
+        )
+else:
+    print(
+            f"Interpretation: p >= {alpha}, so we fail to reject H0. No statistically significant "
+            "association was detected between pollution level and asthma severity."
+        )
+
+
+# 2.1 State the research hypothesis.
+print("2.1 Hypothesis on Anon")
+print(
+"H0 (null hypothesis): There is no association between high air pollution exposure "
+    "(HIGH_POLLUTION) and severe asthma (IS_SEVERE) in children.\n"
+        "H1 (alternative hypothesis): Children exposed to high air pollution are more likely "
+        "to have severe asthma than children exposed to low air pollution.")
+
+# 2.2 Choose and apply an appropriate statistical test.
+print("2.2 Statistical testing on Anon")
+
+print(f"\nSample size after cleaning: n = {len(df_anon_lys)}")
+print("\nBoth primary parameters are binary/categorical (IS_SEVERE, HIGH_POLLUTION), "
+      "so a chi-square test of independence is appropriate.")
+
+contingency_table = pd.crosstab(df_anon_lys["IS_SEVERE"], df_anon_lys["HIGH_POLLUTION"])
+print("\nContingency table (IS_SEVERE vs HIGH_POLLUTION):")
+print(contingency_table)
+
+print("\nGroup balance (HIGH_POLLUTION):")
+print(df_anon_lys["HIGH_POLLUTION"].value_counts())
+
+chi2, p_value, dof, expected = stats.chi2_contingency(contingency_table)
+print("\nSelected test: Chi-square test of independence")
+print("Assumptions: independent observations; expected frequencies >= 5 per cell.")
+print(f"Test statistic (chi-square): {chi2:.4f}")
+print(f"Degrees of freedom: {dof}")
+print(f"p-value: {p_value:.4e}")
+alpha = 0.05
+if p_value < alpha:
+    print(
+f"Interpretation: p < {alpha}, so we reject H0. There is a statistically significant "
+"association between high pollution exposure and severe asthma in this cohort."
+)
+else:
+    print(
+f"Interpretation: p >= {alpha}, so we fail to reject H0. No statistically significant "
+"association was detected between pollution level and asthma severity."
+    )
+
+print()
+
+# 2.2 Compare the statistical results of your analysis based on the original and anonymized data. How do the results differ?
+
+print("The ultimate result is the same. The p-value is much smaller. A smaller p-value suggests stronger evidence against the null hypothesis.")
+
+    
+
 
 
 
