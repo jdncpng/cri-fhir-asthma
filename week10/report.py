@@ -288,6 +288,104 @@ df_pat.to_csv("week_6_data.csv", index=False)
 
 # Week 7
 
+print("WEEK 7")
+
+# 1.1 Import the dataset from the previous exercise. Select one parameter to represent children’s asthma disease severity and another to represent the level of air pollution each child is exposed to. 
+# Print the descriptive statistics for the demographic information as well as these parameters. Ensure you understand the type and scale of the data you are working with.
+# Note: Check if you see dependencies between your selected parameters and the children’s demographics. Adjust your parameters if needed.
+
+# Import dataset from previous exercise
+df = pd.read_csv("week_6_data.csv")
+
+# We have stayed with our original primary parameters in order to stay true to our solution: "IS_SEVERE"
+# But in order for the counts to match and outliers to show as intended we have matched up the other chosen parameters to the Exercise Feedback.
+
+df_analysis = df[['DEATHDATE', 'RACE', 'ETHNICITY', 'GENDER', 'CURRENT_AGE', 'TOTAL_ENCOUNTER', 'ASTHMA_REASON_ENCOUNTER', 'URGENT_CARE_ENCOUNTER', 'ASTHMA_FU_ENCOUNTER', 'avg_pm25_2023', 'IS_SEVERE', 'HIGH_POLLUTION']]
+
+# Print the descriptive statistics for the demographic information as well as these parameters.
+print("Descriptive statistics in file \"decriptive_week7.csv\"")
+df_analysis.describe(include="all").to_csv("decriptive_week7.csv", sep=';', index=False)
+
+# 1.2 Examine your dataset for potential outliers. 
+# Identify any extreme values using visual and statistical methods (e.g. box plots, percentile values) for your primary parameters and the demographic information. 
+# Decide if you need to exclude extreme outliers based on a 5% cut-off of the highest and lowest data values and perform it if necessary.
+
+# Boxplot for visual analysis
+for column in df_analysis:
+    # Box plot
+    sns.boxplot(df_analysis[column])
+    graph_title = "Box Plot for " + column
+    plt.title(graph_title)
+    plt.savefig("7_" + column + "_boxplot.png", bbox_inches="tight", dpi=150)
+    plt.close()
+    
+
+# Percentile outlier removal
+upper_percentile_rank = np.percentile(df_analysis['TOTAL_ENCOUNTER'], 95)
+df_analysis = df_analysis[df_analysis['TOTAL_ENCOUNTER'] <= upper_percentile_rank]
+
+
+# 1.3 Check for and handle any other quality issues in your dataset like duplicate records. Print the count of unique records before and after duplicate removal.
+
+print(f"Count of unique records before: {len(df_analysis)}")
+df_analysis = df_analysis.drop_duplicates()
+df_analysis = df_analysis[df_analysis['DEATHDATE'].isna()]
+print(f"Count of unique records after: {len(df_analysis)}")
+
+
+# 2 HYPOTHESIS DEFINITION AND TESTING
+
+# 2.1 State the research hypothesis.
+print("2.1 Hypothesis")
+print(
+        "H0 (null hypothesis): There is no association between high air pollution exposure "
+        "(HIGH_POLLUTION) and severe asthma (IS_SEVERE) in children.\n"
+        "H1 (alternative hypothesis): Children exposed to high air pollution are more likely "
+        "to have severe asthma than children exposed to low air pollution."
+    )
+
+# 2.2 Choose and apply an appropriate statistical test.
+print("2.2 Statistical testing")
+
+print(f"\nSample size after cleaning: n = {len(df_analysis)}")
+print("\nBoth primary parameters are binary/categorical (IS_SEVERE, HIGH_POLLUTION), "
+          "so a chi-square test of independence is appropriate.")
+
+contingency_table = pd.crosstab(df_analysis["IS_SEVERE"], df_analysis["HIGH_POLLUTION"])
+print("\nContingency table (IS_SEVERE vs HIGH_POLLUTION):")
+print(contingency_table)
+
+print("\nGroup balance (HIGH_POLLUTION):")
+print(df_analysis["HIGH_POLLUTION"].value_counts())
+
+chi2, p_value, dof, expected = stats.chi2_contingency(contingency_table)
+print("\nSelected test: Chi-square test of independence")
+print("Assumptions: independent observations; expected frequencies >= 5 per cell.")
+print(f"Test statistic (chi-square): {chi2:.4f}")
+print(f"Degrees of freedom: {dof}")
+print(f"p-value: {p_value:.4e}")
+alpha = 0.05
+if p_value < alpha:
+    print(
+            f"Interpretation: p < {alpha}, so we reject H0. There is a statistically significant "
+            "association between high pollution exposure and severe asthma in this cohort."
+        )
+else:
+    print(
+            f"Interpretation: p >= {alpha}, so we fail to reject H0. No statistically significant "
+            "association was detected between pollution level and asthma severity."
+        )
+
+
+# 3 DATA EXPORT AND REPORTING
+
+# 3.1 Export the cleaned and analyzed dataset.
+export_file = "week_7_cleaned_data.csv"
+df_analysis.to_csv(export_file, index=False)
+
+print()
+
+
 # Week 8 
 
 # Week 9 L
