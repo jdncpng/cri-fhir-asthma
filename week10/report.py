@@ -213,7 +213,7 @@ df_air = transform_air_data(df_air)
 df_pat = pd.merge(left=df_pat, right=df_air, left_on="CITY", right_on="County")
 
 # Drop the duplicates
-#df_pat = df_pat.drop(columns=["Id.1"])
+df_pat = df_pat.drop(columns=["Id.1"])
 
 # descriptive statistics
 print("\nDescriptive statistics of air quality data")
